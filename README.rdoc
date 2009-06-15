@@ -21,7 +21,7 @@ Currently this plugin has some limitations:
 
 1. Download the latest version of the plugin from http://gauret.free.fr/fichiers/dokuwiki/. A mirror can be found at http://www.mediafire.com/evildev.
 2. Installing the plugin:
-   * You can either extract the archive into the `lib/plugins` directory or
+   * You can either extract the archive into the <tt>lib/plugins</tt> directory or
    * Load the admin page and go to Manage Plugins and enter the URL of the plugin under Download and install the new plugin.
 3. Update the Configuration Settings under the admin page.
 
@@ -34,7 +34,7 @@ When you have it installed, use the following syntax:
 * <tt><note tip>The clues are in the images.</note></tt>
 * <tt><note warning>Beware of the dog when you open the door !!</note></tt>
 
-You can use the note keywords `important`, `warning` and `tip`.
+You can use the note keywords <tt>important</tt>, <tt>warning</tt> and <tt>tip</tt>.
 It is quite easy to add new types of notes if you know a bit of PHP and CSS.
 
 ==Notes
@@ -71,9 +71,9 @@ Many thanks to the following DokuWiki developers (in random order):
 * 2006-03-29 (patches by Eric Hameleers and Christopher Smith)
   * allow note nesting
   * fix the trimmed space problem
-  * fix the issue with protected modes (e.g. `<code>` & `<file>`) not being allowed within notes
+  * fix the issue with protected modes (e.g. <tt><code></tt> & <tt><file></tt>) not being allowed within notes
   * plug the security vulnerability which could allow malicious HTML or JavaScript to infiltrate your wiki
-  * make note types case independent (e.g. `important`, `IMPORTANT` & `Important` will all given an "important" note)
+  * make note types case independent (e.g. <tt>important</tt>, <tt>IMPORTANT</tt> & <tt>Important</tt> will all given an "important" note)
   * and better:
     * code efficiency
     * code reading
