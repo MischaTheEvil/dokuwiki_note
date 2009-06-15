@@ -4,7 +4,7 @@ A plugin for DokuWiki which allows users to easily insert four kinds of notes in
 
 ==Authors
 
-The plugin has been written from scratch by Olivier Cortéz. After the initial release it has been maintained by Olivier while he integrated several patches provided by the DokuWiki-community. Somewhere around the end of 2008 / start of 2009 Olivier started to became too busy with other (real-life) activities and occupations that active development and support halted. On 2009/06/15 Aurélien Bompard decided, after contacting Olivier Cortéz about it, to (temporarily) take-over maintenance and support for the plugin. On the same date Mischa The Evil opened a GitHub-repository for the plugin to make it a "real" community plugin.
+The plugin has been written from scratch by Olivier Cortéz. After the initial release it has been maintained by Olivier while he integrated several patches provided by the DokuWiki-community. Somewhere around the end of 2008 / start of 2009 Olivier started to became too busy with other (real-life) activities and occupations that active development and support halted. On 2009/06/15 Aurélien Bompard decided, after contacting Olivier Cortéz about it, to (temporarily) take-over maintenance and support for the plugin. On the same date Mischa The Evil opened a GitHub-repository for the plugin to make it a "real" community plugin. On the 16th a re-packaged release is available which "completed" the plugin (doc, license etc.)..
 
 ==Requirements
 
@@ -19,10 +19,10 @@ Currently this plugin has some limitations:
 
 ==Download / Installation
 
-1. Download the latest version of the plugin from http://gauret.free.fr/fichiers/dokuwiki/. A mirror can be found at http://www.mediafire.com/evildev.
+1. Download the latest version of the plugin from http://github.com/MischaTheEvil/dokuwiki_note. A mirror containing the packages can be found at http://www.mediafire.com/evildev.
 2. Installing the plugin:
    * You can either extract the archive into the <tt>lib/plugins</tt> directory or
-   * Load the admin page and go to Manage Plugins and enter the URL of the plugin under Download and install the new plugin.
+   * -Load the admin page and go to Manage Plugins and enter the URL of the plugin under Download and install the new plugin.-
 3. Update the Configuration Settings under the admin page.
 
 ==Usage
@@ -60,6 +60,12 @@ Many thanks to the following DokuWiki developers (in random order):
 * zerohalo
 
 ==Changelog
+
+* 2009-06-16 (re-packaged by Mischa The Evil)
+  * Removed obsolete files from the package
+  * Added README with CHANGELOG
+  * Added GNU GPL v2 license
+  * Fixed file-permissions
 
 * 2009-06-15 (fixes by Aurélien Bompard)
   * Fix in the ODT renderer
