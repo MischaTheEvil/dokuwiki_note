@@ -51,7 +51,7 @@ class syntax_plugin_note extends DokuWiki_Syntax_Plugin {
     var $default = 'noteclassic';
   
     function getInfo(){
-        return confToHash(dirname(__FILE__).'/info.txt');
+        return confToHash(dirname(__FILE__).'/INFO.txt');
     }
  
  

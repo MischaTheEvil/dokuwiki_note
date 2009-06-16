@@ -2,7 +2,7 @@
 
 author Olivier Cortès / Eric Hameleers / Christopher Smith / Aurélien Bompard
 email  olive@deep-ocean.net
-date   2009-06-15
+date   2009-06-16
 name   Note Plugin
 desc   Add Note/Important/Tip/Warning Capability (DIV+CSS box)
 url    http://www.dokuwiki.org/plugin:note
