@@ -4,7 +4,7 @@ A plugin for DokuWiki which allows users to easily insert four kinds of notes in
 
 ==Authors
 
-The plugin has been written from scratch by Olivier Cortéz. After the initial release it has been maintained by Olivier while he integrated several patches provided by the DokuWiki-community. Somewhere around the end of 2008 / start of 2009 Olivier started to became too busy with other (real-life) activities and occupations that active development and support halted. On 2009/06/15 Aurélien Bompard decided, after contacting Olivier Cortéz about it, to (temporarily) take-over maintenance and support for the plugin. On the same date Mischa The Evil opened a GitHub-repository for the plugin to make it a "real" community plugin. On the 16th a re-packaged release is available which "completed" the plugin (doc, license etc.)..
+The plugin has been initially written by Olivier Cortéz based on the work of Stephane Chamberland <stephane.chamberland@ec.gc.ca> (Side Notes PlugIn) and Carl-Christian Salvesen <calle@ioslo.net> (Graphviz plugin). After the initial release Olivier maintained it while he integrated several patches provided by the DokuWiki-community. Somewhere between the end of 2008 and the beginning of 2009 Olivier became too busy with other (real-life) activities and occupations that active development and support for the plugin halted. On 2009/06/15 Aurélien Bompard decided, after contacting Olivier Cortéz about it, to (temporarily) take-over maintenance of the plugin and provide support for it. On the same date Mischa The Evil opened a GitHub-repository for the plugin to make it a "real" community plugin. On the 16th a first re-packaged (community-)release has been made available which enhanced the plugins documentation, licensing etc.)..
 
 ==Requirements
 
@@ -61,33 +61,40 @@ Many thanks to the following DokuWiki developers (in random order):
 
 ==Changelog
 
-* 2009-06-16 (re-packaged by Mischa The Evil)
-  * Removed obsolete files from the package
-  * Added README with CHANGELOG
-  * Added GNU GPL v2 license
-  * Fixed file-permissions
+* 2009-07-26 (fix by Benat Dagorret)
+  * Defect: Fixed XHTML validation
+  * Task: Improved and structured licensing and attributions into README with CHANGELOG
+  * Task: Improved CHANGELOG based on info coming from, now cleaned, inline-comments in syntax.php
 
-* 2009-06-15 (fixes by Aurélien Bompard)
-  * Fix in the ODT renderer
-  * Add toolbar buttons for the notes.
+* 2009-06-16 (same as 2009-06-15 re-packaged by Mischa The Evil <mischa_the_evil [at] hotmail [dot] com>)
+  * Task: Removed obsolete files from the package
+  * Task: Added README with CHANGELOG
+  * Task: Added GNU GPL v2 license
+  * Task: Fixed file-permissions (only relevant for zip-packages)
 
-* 2008-02-17 (patches by Aurélien Bompard)
-  * added support for ODT-export
+* 2009-06-15 (fixes by Aurélien Bompard <aurelien [at] bompard [dot] org>)
+  * Defect: Fixed a defect in the ODT renderer
+  * Feature: Added toolbar buttons for the notes.
 
-* 2006-03-29 (patches by Eric Hameleers and Christopher Smith)
-  * allow note nesting
-  * fix the trimmed space problem
-  * fix the issue with protected modes (e.g. <tt><code></tt> & <tt><file></tt>) not being allowed within notes
-  * plug the security vulnerability which could allow malicious HTML or JavaScript to infiltrate your wiki
-  * make note types case independent (e.g. <tt>important</tt>, <tt>IMPORTANT</tt> & <tt>Important</tt> will all given an "important" note)
-  * and better:
+* 2008-02-17 (patches by Aurélien Bompard <aurelien [at] bompard [dot] org>)
+  * Feature: Added support for ODT-export
+
+* 2006-03-29 (patches by Eric Hameleers <alien [at] slackware [dot] com> and Christopher Smith <chris [at] jalakai [dot] co [dot] uk>)
+  * Feature: Allow note nesting
+  * Defect Fixed the trimmed space problem:
+    * use <div> instead of <table>
+    * contain the images and stylesheet inside the plugin
+  * Defect: Fixed the issue with protected modes (e.g. <tt><code></tt> & <tt><file></tt>) not being allowed within notes
+  * Defect: Fixed the security vulnerability which could allow malicious HTML or JavaScript to infiltrate your wiki
+  * Feature: Made note types case independent (e.g. <tt>important</tt>, <tt>IMPORTANT</tt> & <tt>Important</tt> will all given an "important" note)
+  * Feature: Improved:
     * code efficiency
     * code reading
     * conformance to DokuWiki's changes in plugin classes
 
 * 2005-10-13
-  * Initial release by Olivier Cortéz (?)
+  * Initial release by Olivier Cortéz (<olive [at] deep-ocean [dot] net>)
 
 ==License
 
-This plugin is open-source and licensed under the GNU GPL v.2.
+This plugin is open-source and licensed under the GNU GPL v.2. See the bundled GPL.txt file for more information.
